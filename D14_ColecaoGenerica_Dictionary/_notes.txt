@@ -1,0 +1,214 @@
+﻿-----------
+Alterar a precedência das operações matemáticas
+-----------
+
+// na matemática  { [ ( ) ] }
+// na programação ( ( ( ) ) )
+
+-----------
+Conversão de dados
+-----------
+
+// É má pratica usar a conversão implicita, devemos sermpre converter
+
+
+------------
+Comcatenação
+------------
+
+Console.WriteLine("Média: " + Convert.ToString(media)); // Concatenação não deve ser feita com o operador +
+
+String interpolation: Técnica correta para concatenar sem o +
+Console.WriteLine($"\nAluno inscrito no curso {curso2}");
+
+StringBuilder: Classe para manipular strings, nomeadamente concatenações
+
+
+------------------------------------
+Escape Sequence = Caracter de Escape
+------------------------------------
+
+\n (Enter)
+\t (Tab)
+
+
+--------
+sinal =
+--------
+
+1 sinal = é para atribuir
+2 sinais = (==) é para igualar
+
+
+
+--------
+Procedimento ( Método)
+--------
+
+// Método = method = bloco de código para executar uma ação ( void não devolve resultado)
+
+--------------------------
+Data types = tipo de dados
+--------------------------
+
+int valor1;
+double valoe2 = 10.5;
+
+Categorias:
+	value types: int, double, bool							standard
+
+	reference types: string									objects
+
+
+Tipos de memória nas aplicações de programação:
+	stack	standard
+	heap	objects
+
+
+Processo para destruir os reference types (objects)
+	GC = Garbage collector
+
+
+
+
+Classes
+	Podem ter:	|	methods,métodos: ações
+				|						Exemplos: ImprimirFatura(), Somar()
+				|
+				|
+				|	properties, propriedades: características
+				|							Exemplos:	NomeCliente = "asdsad";
+				|										NIFFormador = "123456789";
+				|										DataNascimentoFormando = new DateTime(2000, 01, 01);
+				|
+				|	events, eventos: acontecimentos na vida do objecto 
+				|										Exemplos:	ao abrir o programa
+				|													ao fazer click
+				|													...
+
+
+
+instancias são variavies das classes
+
+para instanciar usa-se o new
+
+	Curso curso01 = new Curso
+
+
+
+	-----------------------
+	Culture
+	-----------------------
+
+	pt-PT
+	pt-BR
+
+
+
+	--------------------------
+	Estruturas Porgramáticas
+	--------------------------
+
+	Condicionais:
+
+		IF simples
+		IF...ELSE
+		IF's encadeado
+		IF...ELSE IF
+		SWITCH
+
+	Ciclicas:
+		
+		WHILE
+		DO...WHILE
+		FOR
+		FOREACH
+
+
+	----------------------------
+	Estruturas de dados : ARRAYS
+	----------------------------
+
+	Vetor ou single-dimensional array: várias linhas x 1 coluna
+
+	Matriz ou multi-dimensional array: várias linhas x várias colunas
+
+
+
+	---------------------------------
+	Estruturas de dados : COLLETIONS
+	---------------------------------
+
+	Collections: Lista de valres
+
+	ArrayList = substituir os vetores; não é fortemente tipada
+
+	List<...> = substituir a ArrayList; é fortemente tipada; Generics (generica)
+
+
+	--------------------------------
+Dictionary - demo
+--------------------------------
+Pedir na consola um novo valor
+Ver se tem menos de 2 caracteres
+    se não Dizer que é nome errado
+Se for nome válido
+    Ver se existir
+       Se não existir, dizer que é nome duplicado
+    Se não existir
+        Usando o valor criar a chave: 2 primeiros caracteres à esquerda em maíusculas
+        Pesquisar a nova chave
+            Se não existir
+                Adicionar a nova linha com o valor inserido na consola e a chave calculada
+            Se existir
+                Adicionar a nova linha com o valo inserido na consola e a chave com o nº incrementado (ex: FR2, FR3)
+
+
+
+---------------------------------
+Repos (repositorio de código)
+---------------------------------
+
+github --> ver este e criar conta
+
+git
+
+
+
+
+-------------------------------
+REGULAR EXPRESSION (REGEX)
+-------------------------------
+
+Date: dd-mm-yyyy
+Hour: hh:mm
+VAT: 999999999
+
+
+// regular-expressions.info
+
+// Class Regex: https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=net-6.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------
+Carateres especiais na Consola
+-------------------------------
+// Ativar o suporte a Unicode na consola
+Console.WriteLine("á é í ó ú ç ã â");
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+Console.WriteLine("á é í ó ú ç ã â");
